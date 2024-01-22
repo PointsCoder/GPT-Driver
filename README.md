@@ -98,9 +98,9 @@ a. After you get your model id, you can run this command to generate motion plan
 ```
 python gpt-driver/test.py -i your_model_id -o your_output_file_name
 ```
-You can get a `your_output_file_name.pkl` that contains a `Dict[token: np.array((6, 2))]` where each test sample has a 3-second planned trajectory. This pickle file can be directly used for evaluation on nuScenes. Please refer to [ST-P3](https://github.com/OpenDriveLab/ST-P3/blob/main/evaluate.py) for evaluation.
+You can get a `your_output_file_name.pkl` that contains a `Dict[token: np.array((6, 2))]` where each test sample has a 3-second planned trajectory. This pickle file can be directly used for evaluation on nuScenes.
 
-b. We also have plans to integrate nuScenes evaluation into this codebase (probably in this year). Stay tuned!
+b. You can refer to the code and data [here](https://drive.google.com/drive/folders/1NCqPtdK8agPi1q3sr9-8-vPdYj08OCAE?usp=sharing) for evaluating the motion planning performance on nuScenes. 
 
 ## Citation 
 If you find this project useful in your research, please consider cite:
